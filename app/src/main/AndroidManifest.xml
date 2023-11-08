@@ -14,7 +14,16 @@
         android:theme="@style/Theme.EduConn"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".Final"
+            android:exported="false" />
+        <activity
+            android:name=".Dificil"
+            android:exported="false" />
+        <activity
+            android:name=".Medio"
+            android:exported="false" />
+        <activity
+            android:name=".Facil"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
