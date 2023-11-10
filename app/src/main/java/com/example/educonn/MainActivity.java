@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity{
         btnComeco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent facil = new Intent(getApplicationContext(), Medio.class);
+                Intent facil = new Intent(getApplicationContext(), Facil.class);
                 startActivity(facil);
             }
         });
