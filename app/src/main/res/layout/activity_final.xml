@@ -4,42 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Final">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="286dp"
+        android:layout_height="140dp"
+        android:text="Parabéns, você concluiu o quizma!!!"
+        android:textColor="@color/gray"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="242dp"
+        android:layout_height="297dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.483"
+        app:srcCompat="@drawable/trofeu" />
 
     <Button
-        android:id="@+id/btnComeco"
+        android:id="@+id/btnRecomeca"
         android:layout_width="189dp"
         android:layout_height="66dp"
         android:backgroundTint="#ED8CFF"
-        android:text="Começar"
+        android:text="Recomeçar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="237dp"
-        android:layout_height="338dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.46"
-        app:srcCompat="@drawable/quizma" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="323dp"
-        android:layout_height="61dp"
-        android:layout_marginHorizontal="10dp"
-        android:text="Teste o seu conhecimento em matemática básica no "
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.801" />
 
 </android.support.constraint.ConstraintLayout>

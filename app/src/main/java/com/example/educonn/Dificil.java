@@ -40,7 +40,7 @@ public class Dificil extends AppCompatActivity implements View.OnClickListener{
         ansD.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
 
-        totalQuestionsTextView.setText("Total de questoes: " + totalQuestion);
+        totalQuestionsTextView.setText("Total de questões: " + totalQuestion);
 
         loadNewQuestion();
 
@@ -95,7 +95,7 @@ public class Dificil extends AppCompatActivity implements View.OnClickListener{
                 .setMessage("Sua pontuacao foi de: " + score)
                 .setPositiveButton( "Restart", (dialogInterface, i) -> restartQuiz() )
                 .setNeutralButton("Finalizar Quiz", (dialogInterface, i) -> {
-                    Intent finalizar= new Intent(this, Comeco.class);
+                    Intent finalizar= new Intent(this, Final.class);
                     startActivity(finalizar);
                 })
                 .setCancelable(false)

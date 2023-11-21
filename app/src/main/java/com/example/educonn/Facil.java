@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import com.example.educonn.ScoreTotal;
 
 public class Facil extends AppCompatActivity implements View.OnClickListener{
 
@@ -40,7 +41,7 @@ public class Facil extends AppCompatActivity implements View.OnClickListener{
         ansD.setOnClickListener(this);
         submitBtn.setOnClickListener(this);
 
-        totalQuestionsTextView.setText("Total de questoes: " + totalQuestion);
+        totalQuestionsTextView.setText("Total de questões: " + totalQuestion);
 
         loadNewQuestion();
 
@@ -48,11 +49,11 @@ public class Facil extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
-
         ansA.setBackgroundColor(Color.WHITE);
         ansB.setBackgroundColor(Color.WHITE);
         ansC.setBackgroundColor(Color.WHITE);
         ansD.setBackgroundColor(Color.WHITE);
+
 
         Button clickedButton = (Button) view;
         if(clickedButton.getId()==R.id.submit_btn){
@@ -67,6 +68,8 @@ public class Facil extends AppCompatActivity implements View.OnClickListener{
             clickedButton.setBackgroundColor(Color.MAGENTA);
         }
     }
+
+
 
     void loadNewQuestion(){
 
